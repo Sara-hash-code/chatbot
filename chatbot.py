@@ -39,5 +39,12 @@ def chat():
     return jsonify({"reply": bot_reply})
 
 
+
+@app.route("/", methods=["GET"])
+def home():
+    return "API is running!"
+
+
+
 if __name__ == "__main__":
     app.run(debug=True)
