@@ -1,2 +1,4 @@
-web: bash start.sh
+#!/bin/bash
+gunicorn chatbot:app
+
 
